@@ -19,3 +19,11 @@ for(i = 0; i < close.length; i++) {
         div.style.display = "none";
     }
 }
+
+// checking finished tasks
+var list = document.querySelector('ul');
+list.addEventListener('click', function(e) {
+    if(e.target.tagName === 'LI') {
+        e.target.classList.toggle('checked');
+    }
+}, false);
